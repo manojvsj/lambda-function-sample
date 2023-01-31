@@ -34,7 +34,7 @@ WORKDIR /src
 ```bash
 docker build -t lambda-image .
 docker run --rm -it -v ${PWD}/package:/src/package lambda-image  make build
-``
+```
 
 Or simply run the make run, Here the makefile script contains the set of instructions which will create 
 a python virtual env and install the pypi dependencies and zip it and mount the package folder into current directory
